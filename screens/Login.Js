@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, SafeAreaView, Image, TextInput, ScrollView, TouchableOpacity } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { AntDesign } from '@expo/vector-icons';
-import { Feather } from '@expo/vector-icons'; 
+import { AntDesign, Feather } from '@expo/vector-icons';
 
 const Login = ({navigation}) => {
   const [isSecureEntry, setIsSecureEntry] = useState(true)
