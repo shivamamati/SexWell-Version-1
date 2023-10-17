@@ -7,6 +7,7 @@ import Welcome from './screens/Welcome.js';
 import Login from './screens/Login.Js';
 import Register from './screens/Register.js';
 import Homepage from './screens/Homepage.js';
+import Calendar from './screens/Features/calender.js';
 
 
 const Stack = createNativeStackNavigator();
@@ -40,6 +41,13 @@ function App() {
         options={{
           title:'My Sexual Health Profile', 
           headerBackVisible:false}}/>
+        <Stack.Screen 
+        name="Calendar" 
+        component={Calendar} 
+        options={{
+          title:'My Calendar', 
+          headerBackVisible:false}}/>
+
       </Stack.Navigator>
     </NavigationContainer>
   );

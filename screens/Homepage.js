@@ -11,7 +11,7 @@ const Homepage = ({navigation}) => {
         <Text style={{fontSize:20}}>What would you like to do today?</Text>
     </View>
     <View>
-      <TouchableOpacity 
+      <TouchableOpacity onPress={() => navigation.navigate('Calendar')}
         style={{backgroundColor: 'red', padding:20, borderRadius:10, marginTop: 30,marginLeft:20, marginRight:20,flexDirection:'row'}}>
         <AntDesign name="calendar" size={30} color="white" /> 
         <Text style={{textAlign:'center',paddingTop:5, paddingLeft:5, fontWeight:'700', fontSize:16, color: 'white'}}>View My Calendar</Text>
